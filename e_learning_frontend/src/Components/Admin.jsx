@@ -6,6 +6,7 @@ function Admin() {
       <div>
         <RightSideBar />
       </div>
+      
       <div></div>
     </div>
   );
