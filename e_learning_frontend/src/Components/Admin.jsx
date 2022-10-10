@@ -1,12 +1,13 @@
-import RightSideBar from "./LeftSideBar";
+import LeftSideBar from "./LeftSideBar";
+import RightContent from "./RightContent";
+import {useState} from "react"
 
 function Admin() {
+  const [section, setSection] = useState("");
   return (
     <div className="admin">
-      <div>
-        <RightSideBar />
-      </div>
-      
+      <LeftSideBar section={section} setSection = {setSection} />
+      <RightContent setSection = {setSection} />
       <div></div>
     </div>
   );
