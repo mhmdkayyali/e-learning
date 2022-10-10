@@ -20,6 +20,14 @@ function Table({ rows, setRows }) {
             <td>text1.3</td>
             <td>text1.3</td>
           </tr>
+          <tr>
+            <td>text1.1</td>
+            <td>text1.2</td>
+            <td>text1.3</td>
+            <td>text1.3</td>
+            <td>text1.3</td>
+            <td>text1.3</td>
+          </tr>
         </tbody>
       </table>
     );
