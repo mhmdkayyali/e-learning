@@ -11,6 +11,8 @@ function Login() {
         <div className="login-header">Login</div>
         <div className="login-content">
           <p className="login-parag">Login by entering your username and password</p>
+          <Input input_options={first} />
+          <Input input_options={second} />
           <div className="login-button"><Button options={"Login"} /></div>
         </div>
       </div>
