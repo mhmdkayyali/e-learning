@@ -22,6 +22,17 @@ function RightContent(section) {
             />
           </div>
         </div>
+        {section === "Courses" && (
+          <div className="inputs">
+            <Input input_options={first} />
+            <Input input_options={second} />
+            <Input input_options={third} />
+            <Input input_options={fourth} />
+            <div className="submit-button-container">
+              <Button options={"Submit"} />
+            </div>
+          </div>
+        )}
         <div>
           <Table />
         </div>
