@@ -9,17 +9,29 @@ const third = "Instructor";
 const fourth = "Time";
 
 function RightContent(section) {
-    const temp1 = false
+  const temp1 = false;
   return (
     <>
       <div className="right-content">
         <div className="first-section">
           <p>Admin</p>
-          <div className="add-button-container">
-            <Button
-              onClick={()=>{temp1 = true}}
-              options={"Add"}
-            />
+          <div className="add-delete-button-container">
+            <div className="add-button">
+              <Button
+                onClick={() => {
+                  temp1 = true;
+                }}
+                options={"Add"}
+              />
+            </div>
+            <div className="delete-button">
+              <Button
+                onClick={() => {
+                  temp1 = true;
+                }}
+                options={"Delete"}
+              />
+            </div>
           </div>
         </div>
         {section === "Courses" && (
