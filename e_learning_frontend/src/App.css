@@ -85,11 +85,19 @@ table {
   font-size: 20px;
 }
 
-.add-button-container{
-  width: 10%;
+.add-delete-button-container{
+  width: 20%;
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
+}
+
+.add-button{
+  width: 40%;
+}
+
+.delete-button{
+  width: 40%;
 }
 
 .inputs{
