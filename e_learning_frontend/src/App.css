@@ -142,3 +142,37 @@ table {
   flex-direction: column;
 }
 
+.login-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  background-color: #202c70;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 40px;
+  color: white;
+  font-weight: 500;
+}
+
+.login-content{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.login-button{
+  width: 30%;
+  margin-top: 20px;
+}
+
+.login-parag{
+  text-align: center;
+  font-size:large;
+  margin: 20px 30px;
+}
