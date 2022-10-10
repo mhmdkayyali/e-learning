@@ -8,7 +8,7 @@ function Table({ rows, setRows }) {
             <th>Course Name</th>
             <th>Instructor</th>
             <th>Time</th>
-            <th>Remove</th>
+
           </tr>
         </thead>
         <tbody>
@@ -18,7 +18,7 @@ function Table({ rows, setRows }) {
             <td>text1.3</td>
             <td>text1.3</td>
             <td>text1.3</td>
-            <td>text1.3</td>
+
           </tr>
           <tr>
             <td>text1.1</td>
@@ -26,7 +26,7 @@ function Table({ rows, setRows }) {
             <td>text1.3</td>
             <td>text1.3</td>
             <td>text1.3</td>
-            <td>text1.3</td>
+
           </tr>
         </tbody>
       </table>
