@@ -1,6 +1,6 @@
-function Button({options}) {
-  return <button className="Button"> {options} </button>;
-  
+function Button({options, onClick}) {
+  return <button onClick={onClick} className="Button"> {options} </button>;
+
 }
 
 export default Button;
