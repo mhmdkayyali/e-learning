@@ -9,6 +9,10 @@ class Annoucement extends Model
 {
     use HasFactory;
 
+    public function courses() {
+        return $this->belongsTo(Course::class, "course_id");
+    }
+
     protected $fillable = [
         'title',
         'content',
