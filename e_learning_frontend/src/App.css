@@ -85,3 +85,42 @@ table {
   font-size: 20px;
 }
 
+.add-button-container{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:#f3f3f3;
+}
+
+.input{
+  width: 85%;
+  height: 7vh;
+  margin: 5px 5px;
+  border-radius: 10px;
+  border: 1px solid grey ;
+  font-size: 17px;
+  padding-left: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.1s;
+  outline: none;
+}
+
+.input:focus{
+  border: 2px solid midnightblue ;
+}
+
+.submit-button-container{
+  width: 10%;
+  margin-top: 15px;
+}
