@@ -7,20 +7,37 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function userRoles() {
+        return $this->belongsTo(User_role::class, "roles_id");
+    }
+
+    public function courses() {
+        return $this->belongsToMany(Course::class, "instructor");
+    }
+
+    public function registers() {
+        return $this->belongsToMany(Register::class, "student_id");
+    }
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
+        'username',
         'password',
+        'roles_id'
     ];
 
     /**
